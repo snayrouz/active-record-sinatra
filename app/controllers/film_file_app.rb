@@ -9,4 +9,10 @@ class FilmFile < Sinatra::Base
     @films = Film.all
     erb :films_index
   end
+
+  get '/directors' do
+    @directors = Director.all
+    erb :directors_index
+  end
+
 end
